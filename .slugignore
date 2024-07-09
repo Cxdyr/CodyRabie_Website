@@ -1,0 +1,14 @@
+*.pyc
+__pycache__/
+.env
+*.sqlite3
+*.csv
+*.xlsx
+*.pdf
+*.jpg
+*.png
+*.gif
+venv/
+node_modules/
+tests/
+docs/
