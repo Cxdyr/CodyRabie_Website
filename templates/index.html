@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Rabie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Cody Alvin Rabie</h1>
+    <main>
+        <div class="profile">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="small-text">
+            <b>My Links:</b>
+        </div>
+                <a href="{{url_for('chatbot')}}" target="_blank" class="link-box">CodyBOT</a>
+                <a href="https://www.linkedin.com/in/cody-rabie-838aa0205"target="_blank" class="link-box">LinkedIn</a>
+                <a href="https://github.com/Cxdyr" target="_blank" class="link-box" >GitHub</a>
+                <a href="{{ url_for('resume') }}" target="_blank" class="link-box"> Resume</a>
+    </main>
+</body>
+</html>

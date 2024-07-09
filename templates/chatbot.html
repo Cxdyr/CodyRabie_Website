@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/chatbot_interaction.js') }}" defer></script>
+</head>
+<body>
+    <h1>Chat with CodyBOT</h1>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="user_input" placeholder="Type a message" onkeypress="if(event.keyCode==13) sendMessage()">
+        <button id="send_button" onclick="sendMessage()">Send</button>
+    </div>
+    <a href="{{ url_for('index') }}" class="link-box"> Home</a>
+</body>
+</html>

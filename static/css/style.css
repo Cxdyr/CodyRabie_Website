@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    font-family: 'Ariel';
+    background-color: #0d0d0d; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Title styling */
+ h1 {
+    color: #fff; /* White text */
+    background-color: rgb(50, 8, 237); 
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+/* New div styling */
+.small-text {
+    background-color: rgb(50, 8, 237); 
+    color: #fff; /* White text */
+    padding: 10px;
+    margin: 20px auto; /* Centering the div */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.link-box {
+    background-color: rgb(128, 105, 230); 
+    color: #fff; /* White text */
+    padding: 10px;
+    margin: 10px auto; /* Centering the div */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Chatbox styling */
+#chatbox {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages container styling */
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+
+/* Message styling */
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.message.user {
+    text-align: right;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.message.bot {
+    text-align: left;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Input and button styling */
+#user_input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 70px;
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+button:disabled {
+    background-color: rgb(100, 100, 100);
+    cursor: not-allowed;
+}
+
+
+
+/* Resume container styling */
+#resume-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile section styling */
+.profile {
+    display: flex;
+    justify-content: center; /* Centering the image horizontally */
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-picture {
+    align-items: center;
+    max-width: 300px;
+    border-radius: 45%;
+}
+
+/* Link styling */
+a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
