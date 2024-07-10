@@ -16,6 +16,10 @@ def chatbot():
 def resume():
     return render_template('resume.html')
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
 @app.route('/get_response', methods=['POST'])
 def get_response_route():
     user_input = request.form['user_input']

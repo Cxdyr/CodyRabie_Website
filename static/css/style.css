@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    font-family: 'Ariel';
+    font-family: 'Arial';
     background-color: #0d0d0d; /* Black background */
     margin: 0;
     padding: 0;
@@ -9,10 +9,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    overflow-y: auto; /* Ensure vertical scrolling */
 }
 
 /* Title styling */
- h1 {
+h1 {
     color: #fff; /* White text */
     background-color: rgb(50, 8, 237); 
     width: 100%;
@@ -35,6 +36,23 @@ body {
     font-size: 14px;
 }
 
+/* Toggle button styling */
+/* About Me button styling */
+#toggle-about-me {
+    background-color: rgb(128, 105, 230); 
+    color: #fff; /* White text */
+    padding: 10px;
+    margin: 10px auto; /* Centering the div */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    border: none; /* Remove default button border */
+    cursor: pointer;
+}
+
 .link-box {
     background-color: rgb(128, 105, 230); 
     color: #fff; /* White text */
@@ -46,6 +64,26 @@ body {
     text-align: center;
     font-size: 14px;
     text-decoration: none;
+}
+
+/* About me section styling */
+.about-me {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20%;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-desc p{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10%;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
 }
 
 /* Chatbox styling */
@@ -110,13 +148,10 @@ button:hover {
     background-color: #0056b3;
 }
 
-
 button:disabled {
     background-color: rgb(100, 100, 100);
     cursor: not-allowed;
 }
-
-
 
 /* Resume container styling */
 #resume-container {

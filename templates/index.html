@@ -12,13 +12,35 @@
         <div class="profile">
             <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-picture">
         </div>
+        
+        <div class="small-text">
+            <b><button id="toggle-about-me" class="link-box">About Me</button></b>
+        </div>
+        <section id="about-me-section" class="about-me" style="display: none;">
+            <p> My name is Cody Rabie, welcome to my website. <br>
+                I made this webpage to demonstrate my front-end <br>
+                development skills and some of my cool projects! <br>
+                I am a computer science undergrad student at Old<br>
+                Dominion University, minoring in Data Science. I <br>
+                am proficient in C++, Java, Python, HTML, and other <br>
+                stylistic languages like CSS. I'm 21 years old <br>
+                and live in Carrollton Virginia but am willing to<br>
+                commute or relocate. Enjoy the webpage!<br>
+            </p>
+        </section>
+
+        <div class="small-text">
+             <a href="{{url_for('projects')}}" target="_blank" class ="link-box">My Projects</a>
+        </div>
+
         <div class="small-text">
             <b>My Links:</b>
         </div>
-                <a href="{{url_for('chatbot')}}" target="_blank" class="link-box">CodyBOT</a>
-                <a href="https://www.linkedin.com/in/cody-rabie-838aa0205"target="_blank" class="link-box">LinkedIn</a>
-                <a href="https://github.com/Cxdyr" target="_blank" class="link-box" >GitHub</a>
-                <a href="{{ url_for('resume') }}" target="_blank" class="link-box"> Resume</a>
+        <a href="{{url_for('chatbot')}}" target="_blank" class="link-box">CodyBOT</a>
+        <a href="https://www.linkedin.com/in/cody-rabie-838aa0205" target="_blank" class="link-box">LinkedIn</a>
+        <a href="https://github.com/Cxdyr" target="_blank" class="link-box" >GitHub</a>
+        <a href="{{ url_for('resume') }}" target="_blank" class="link-box"> Resume</a>
     </main>
+    <script src="{{ url_for('static', filename='js/dropdown.js') }}"></script>
 </body>
 </html>
